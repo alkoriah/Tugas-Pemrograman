@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Mahasiswa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h4>Form Data Mahasiswa</h4>
+                <a href="/mahasiswa" class="btn btn-info btn-sm mb-3 float-left"><i class="fa-solid fa-arrow-left"></i> List Data</a>
+                <br /><br />
+                <form action="/form" method="post" class="bg-pink shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    Nama:<br />
+                    <input type="text" autofocus class="form-control" required name="nama" id="nama"><br />
+                    NIM:<br />
+                    <input type="text" autofocus class="form-control" required name="nim" id="nim"><br />
+                    Alamat:<br />
+                    <textarea name="alamat" class="form-control" required id="alamat" cols="30" rows="5"></textarea><br />
+
+                    <button type="submit" class="bnt btn-sm btn-info">
+                        <i class="fa-solid fa-floppy"></i>Simpan
+                    </button>
+                    <button type="reset" class="bnt btn-sm btn-danger">
+                            <i class="fa-solid fa-refresh"></i>Reset
+                    </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
